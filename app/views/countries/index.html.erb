@@ -1,7 +1,6 @@
 <h1>Countries#index</h1>
 
-<%= @countries %>
-<a href="countries/new">New movie</a>
+<a href="countries/new">New country</a>
 <% @countries.each do |country| %>
 	<h2><%= country.name %></h2>
 	<a href="/countries/<%=  country.id %>">View</a>
