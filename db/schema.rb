@@ -10,6 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171003055916) do
+
+  create_table "countries", force: :cascade do |t|
+    t.text "name"
+    t.integer "pop"
+    t.text "flag_url"
+    t.text "language"
+    t.text "president"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
